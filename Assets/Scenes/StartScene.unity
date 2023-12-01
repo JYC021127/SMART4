@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 8a7d167a5a2224becb96705f88b67442, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -462,7 +462,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -435, y: 336}
+  m_AnchoredPosition: {x: -435, y: 276}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &463054679
@@ -712,12 +712,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0f3024fb6a494f2c995c9109ad07844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgMusic: {fileID: 0}
   normalMixer: {fileID: 24300002, guid: 12b8b0bc43bc6458ba654b873152bbb8, type: 2}
   buttonMixer: {fileID: 24300002, guid: 0c028889b80134f99b442640e020e5d9, type: 2}
   makeMove: {fileID: 0}
   reverse: {fileID: 8300000, guid: ec315623c9a8a4ade84249910d83aaeb, type: 3}
   button: {fileID: 8300000, guid: d703eca2b0cba495fb1e994d9a629427, type: 3}
   win: {fileID: 0}
+  muteSign: {fileID: 0}
+  mute: {fileID: 0}
+  unmute: {fileID: 0}
 --- !u!1 &718927888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,7 +1030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7019608, g: 0.8117647, b: 0.64705884, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1171,6 +1175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instructions: {fileID: 973962112}
+  mainCanvas: {fileID: 0}
   instructionsButton: {fileID: 0}
   askRestart: {fileID: 0}
   reverseButton: {fileID: 0}

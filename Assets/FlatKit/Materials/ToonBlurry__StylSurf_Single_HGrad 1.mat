@@ -54,7 +54,7 @@ Material:
     - _Color: {r: 0.7924528, g: 0.77979815, b: 0.743859, a: 1}
     - _ColorDim: {r: 0.8584906, g: 0.42607448, b: 0.26321647, a: 1}
     - _ColorDimExtra: {r: 0.85, g: 0.85, b: 0.85, a: 0.85}
-    - _ColorGradient: {r: 0.36845854, g: 0.6792453, b: 0.6792453, a: 1}
+    - _ColorGradient: {r: 0.4627451, g: 0.61618304, b: 0.7058824, a: 1}
     - _FlatRimColor: {r: 0.5918476, g: 0.63483685, b: 0.9433962, a: 1}
     - _FlatSpecularColor: {r: 0.52358484, g: 0.6375387, b: 1, a: 1}
   m_BuildTextureStacks: []
