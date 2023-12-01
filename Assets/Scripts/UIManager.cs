@@ -48,7 +48,10 @@ public class UIManager : MonoBehaviour
     public void CloseAskRestart()
     {
         askRestart.SetActive(false);
-        reverseButton.SetActive(true);
+        if (GameObject.Find("Player").GetComponent<PlayerController>().GetTotalTurn() > 0)
+        {
+            reverseButton.SetActive(true);
+        }
         if (instructions != null)
         {
             instructionsButton.SetActive(true);

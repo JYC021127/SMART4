@@ -587,6 +587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boardText: {fileID: 1706436240}
   stateText: {fileID: 700179507}
+  askRestart: {fileID: 209829964}
   reverseButton: {fileID: 2125300463}
   arrow0: {fileID: 43318534}
   arrow1: {fileID: 1450684951}

@@ -11,6 +11,7 @@ public class Game : MonoBehaviour
     private int[,,] board; // 3D array to represent the game board
     public TMP_Text boardText;
     public TMP_Text stateText;
+    public GameObject askRestart;
     public GameObject reverseButton;
     public GameObject arrow0;
     public GameObject arrow1;
@@ -34,7 +35,7 @@ public class Game : MonoBehaviour
         {
             reverseButton.SetActive(false);
         }
-        if (GameObject.Find("Player").GetComponent<PlayerController>().GetTotalTurn() == 1)
+        if (GameObject.Find("Player").GetComponent<PlayerController>().GetTotalTurn() == 1 && !askRestart.activeSelf)
         {
             reverseButton.SetActive(true);
         }
