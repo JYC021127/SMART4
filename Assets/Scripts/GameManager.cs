@@ -77,9 +77,12 @@ public class GameManager : MonoBehaviour
                             // can't place
                             else 
                             {
-                                ruleInform.text = "Maximum stack 5 pieces, cannot place here";
-                                startTiming = true;
-                                remainingTime = showText;
+                                if (!restartPage.activeSelf)
+                                {
+                                    ruleInform.text = "Maximum stack 5 pieces, cannot place here";
+                                    startTiming = true;
+                                    remainingTime = showText;
+                                }
                             }
                         }
                     }
@@ -122,9 +125,12 @@ public class GameManager : MonoBehaviour
                         // can't place
                         else 
                         {
-                            ruleInform.text = "Maximum stack 5 pieces, cannot place here";
-                            startTiming = true;
-                            remainingTime = showText;
+                            if (!restartPage.activeSelf) 
+                            {
+                                ruleInform.text = "Maximum stack 5 pieces, cannot place here";
+                                startTiming = true;
+                                remainingTime = showText;
+                            }
                         }
                     }
                 }
