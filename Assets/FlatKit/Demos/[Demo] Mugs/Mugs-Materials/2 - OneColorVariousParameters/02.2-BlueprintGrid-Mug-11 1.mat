@@ -31,9 +31,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _CelPrimaryMode: 0
-    - _FlatRimEdgeSmoothness: 0
-    - _FlatRimLightAlign: 1
-    - _FlatRimSize: 0.903
+    - _FlatRimEdgeSmoothness: 0.557
+    - _FlatRimLightAlign: 0.704
+    - _FlatRimSize: 0.872
     - _FlatSpecularEdgeSmoothness: 0.5
     - _FlatSpecularSize: 0.531
     - _GradientCenterY: 0
@@ -44,10 +44,11 @@ Material:
     - _ShadowEdgeSize: 0.021
     - _ShadowEdgeSizeExtra: 0.023
     - _SpecularEnabled: 0
+    - _VertexColorsEnabled: 0
     m_Colors:
     - _Color: {r: 0.9716981, g: 0.8085163, b: 0.61877, a: 1}
     - _ColorDimExtra: {r: 0.5754717, g: 0.31925717, b: 0.23616058, a: 0.85}
-    - _ColorGradient: {r: 0.65, g: 0.65, b: 0.65, a: 1}
-    - _FlatRimColor: {r: 0.60048056, g: 0.68508583, b: 0.735849, a: 1}
+    - _ColorGradient: {r: 0.764151, g: 0, b: 0, a: 1}
+    - _FlatRimColor: {r: 0.61614454, g: 0.7354847, b: 0.8113208, a: 1}
     - _FlatSpecularColor: {r: 0.92158204, g: 0.33716366, b: 0.09305898, a: 1}
   m_BuildTextureStacks: []
