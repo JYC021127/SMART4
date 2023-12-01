@@ -1,5 +1,5 @@
 title: Smart 4
-description: Site for game Smart 4
-remote_theme: pages-themes/architect@v0.2.0
+description: Site for the game Smart 4
+remote_theme: pages-themes/architect
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+- jekyll-remote-theme
