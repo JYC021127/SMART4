@@ -1957,7 +1957,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 12b8b0bc43bc6458ba654b873152bbb8, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.409
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2075,6 +2075,7 @@ MonoBehaviour:
   reverse: {fileID: 8300000, guid: ec315623c9a8a4ade84249910d83aaeb, type: 3}
   button: {fileID: 8300000, guid: d703eca2b0cba495fb1e994d9a629427, type: 3}
   win: {fileID: 8300000, guid: 8d9000ef463034aa28e8e00b21375463, type: 3}
+  error: {fileID: 8300000, guid: 184780b53c0e043369b4afb4e1b34652, type: 3}
   muteSign: {fileID: 1519176975}
   mute: {fileID: 21300000, guid: 62b21da32e35d45a08dea2028a6daaeb, type: 3}
   unmute: {fileID: 21300000, guid: 50eac140ff7d549878ec347e3a5d02a5, type: 3}
@@ -2721,6 +2722,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2816,6 +2818,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   centerPoint: {fileID: 1233885774}
   rotationSlider: {fileID: 469024487}
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a99f37b2e4494ac8a5e4e0b3bd97798, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 963194228}
+  shakeDuration: 0.3
+  shakeMagnitude: 0.1
 --- !u!1 &1007401187
 GameObject:
   m_ObjectHideFlags: 0
@@ -4092,7 +4109,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: ee52d4c877f654fe5bcdd52af3dbebf3, type: 2}
   m_audioClip: {fileID: 8300000, guid: 6fcc99c4d9fbe4f38b2b2774ab8a55b1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.349
+  m_Volume: 0.227
   m_Pitch: 0.97
   Loop: 1
   Mute: 0
@@ -5416,7 +5433,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -162, y: -157}
+  m_AnchoredPosition: {x: -243, y: -108}
   m_SizeDelta: {x: 304, y: 102.232}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1937680810
@@ -5478,7 +5495,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: -22.96
+  m_lineSpacing: -3.39
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0

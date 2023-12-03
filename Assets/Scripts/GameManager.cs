@@ -77,8 +77,10 @@ public class GameManager : MonoBehaviour
                             // can't place
                             else 
                             {
-                                if (!restartPage.activeSelf)
+                                if (!restartPage.activeSelf && !game.IsGameFinished())
                                 {
+                                    GameObject.Find("Main Camera").GetComponent<CameraShake>().Shake();
+                                    GameObject.Find("SoundEffects").GetComponent<AudioManager>().Error();
                                     ruleInform.text = "Maximum stack 5 pieces, cannot place here";
                                     startTiming = true;
                                     remainingTime = showText;
@@ -125,8 +127,10 @@ public class GameManager : MonoBehaviour
                         // can't place
                         else 
                         {
-                            if (!restartPage.activeSelf) 
+                            if (!restartPage.activeSelf && !game.IsGameFinished()) 
                             {
+                                GameObject.Find("Main Camera").GetComponent<CameraShake>().Shake();
+                                GameObject.Find("SoundEffects").GetComponent<AudioManager>().Error();
                                 ruleInform.text = "Maximum stack 5 pieces, cannot place here";
                                 startTiming = true;
                                 remainingTime = showText;

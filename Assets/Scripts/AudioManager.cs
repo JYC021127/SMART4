@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip reverse;
     public AudioClip button;
     public AudioClip win;
+    public AudioClip error;
 
     public Button muteSign;
     public Sprite mute;
@@ -58,12 +59,19 @@ public class AudioManager : MonoBehaviour
         AudioSource audio = bgMusic.GetComponent<AudioSource>();
         if (audio.volume == 0)
         {
-            audio.volume = 0.349f;
+            audio.volume = 0.227f;
             muteSign.GetComponent<UnityEngine.UI.Image>().sprite = unmute;
         }
         else {
             audio.volume = 0;
             muteSign.GetComponent<UnityEngine.UI.Image>().sprite = mute;
         }
+    }
+
+    public void Error()
+    {
+        audioSource.outputAudioMixerGroup = normalMixer;
+        audioSource.clip = error;
+        audioSource.Play();
     }
 }

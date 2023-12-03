@@ -601,7 +601,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 12b8b0bc43bc6458ba654b873152bbb8, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.409
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -719,6 +719,7 @@ MonoBehaviour:
   reverse: {fileID: 8300000, guid: ec315623c9a8a4ade84249910d83aaeb, type: 3}
   button: {fileID: 8300000, guid: d703eca2b0cba495fb1e994d9a629427, type: 3}
   win: {fileID: 0}
+  error: {fileID: 0}
   muteSign: {fileID: 0}
   mute: {fileID: 0}
   unmute: {fileID: 0}
@@ -1788,7 +1789,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: e30313d261a794c56b2e04bfdd4b4ba3, type: 2}
   m_audioClip: {fileID: 8300000, guid: 735fd521be2224b84a87839247643683, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.227
   m_Pitch: 1
   Loop: 1
   Mute: 0

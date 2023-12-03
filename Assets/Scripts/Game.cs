@@ -18,6 +18,7 @@ public class Game : MonoBehaviour
     public GameObject arrow2;
     public GameObject arrow3;
     public GameObject arrow4;
+    private bool reversed;
     private bool gameFinished;
     private string previousMove;
     private GameObject previousPiece;
@@ -129,6 +130,7 @@ public class Game : MonoBehaviour
         CheckWinCondition();
         previousMove = row.ToString() + col.ToString() + (level-1).ToString();
         reverseButton.SetActive(true);
+        reversed = false;
     }
 
     public void ReverseMove()
@@ -156,6 +158,7 @@ public class Game : MonoBehaviour
         board[row, col, level] = -1;
         DisplayBoard();
         
+        reversed = true;
         PlayerController player = GameObject.Find("Player").GetComponent<PlayerController>();
         int currPlayer = player.GetPlayerTurn();
         int currTurn = player.GetTotalTurn();
@@ -511,6 +514,11 @@ public class Game : MonoBehaviour
     public bool IsGameFinished()
     {
         return gameFinished;
+    }
+
+    public bool Reversed()
+    {
+        return reversed;
     }
 
 }
