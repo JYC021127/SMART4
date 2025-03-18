@@ -1,4 +1,3 @@
-# SMART4
 <p align="center">
   <img src="/Assets/UI/title.png" width="350" title="hover text">
 </p>
